@@ -15,4 +15,10 @@ header{
 
 section{
   display: flex;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  gap: 93px;
 }
