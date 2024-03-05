@@ -25,7 +25,7 @@ header > section > h1{
   color: #445964;
 }
 
-section > img{
+#logo-header{
   max-width: 2.8rem;
   width: auto;
   height: auto;
@@ -103,6 +103,10 @@ aside > img {
   height: auto;
 }
 
+main{
+  margin-top: -10rem;
+}
+
 main > section{
   display: flex;
   flex-direction: column;
@@ -111,6 +115,8 @@ main > section{
 
 #img-main{
   aspect-ratio: 1/1;
+  width: 300px;
+  height: auto;
 }
 
 main > section > h1{
