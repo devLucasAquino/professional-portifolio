@@ -106,4 +106,37 @@ aside > img {
 main > section{
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
+
+#img-main{
+  aspect-ratio: 1/1;
+}
+
+main > section > h1{
+  font-size: 48px;
+  color: #445964;
+}
+
+main > section > p{
+  font-size: 22px;
+  color: #263138;
+}
+
+#h1-skills{
+  margin-top: 3rem;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  padding: 50px;
+  margin-top: -8rem;
+}
+
+.sigle-skills{
+  display: flex;
+  flex-direction: column;
+}
+
