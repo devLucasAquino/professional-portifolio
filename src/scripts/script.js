@@ -1,14 +1,24 @@
-// Seletor para o contêiner do carousel
-const carouselContainer = document.querySelector('carrossel-container');
-// Largura de um item no carousel
-const itemWidth = document.querySelector('.carrossel-item').clientWidth;
+let slideAtual = 0;
+const slides = document.querySelectorAll('.carrossel-item');
 
-// Função para mover o carousel
-function moveCarousel(direction) {
-  const currentPosition = carouselContainer.style.transform ? parseInt(carouselContainer.style.transform.match(/-?\d+/)[0]) : 0;
-  const newPosition = direction === 'next' ? currentPosition - itemWidth : currentPosition + itemWidth;
-  carouselContainer.style.transform = `translateX(${newPosition}px)`;
+function mudaSlide(novaSlide) {
+ slides[slideAtual].style.opacity = 0;
+
+ slideAtual = (slideAtual + novaSlide) % slides.length;
+ if (slideAtual < 0) {
+    slideAtual = slides.length - 1;
+ }
+
+ // Mostra o novo slide
+ slides[slideAtual].style.opacity = 1;
 }
 
-document.getElementById('prevBtn').addEventListener('click', () => moveCarousel('prev'));
-document.getElementById('nextBtn').addEventListener('click', () => moveCarousel('next'));
+// Função para o botão "Anterior"
+document.getElementById('prevBtn').addEventListener('click', function() {
+ mudaSlide(-1);
+});
+
+// Função para o botão "Próximo"
+document.getElementById('nextBtn').addEventListener('click', function() {
+ mudaSlide(1);
+});
