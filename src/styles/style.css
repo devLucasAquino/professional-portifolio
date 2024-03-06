@@ -146,3 +146,39 @@ main > section > p{
   flex-direction: column;
 }
 
+.section-portifolio{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.text-portifolio{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 4rem;
+  margin-left: -44rem;
+  margin-bottom: 5rem;
+}
+
+section > div > h1{
+  font-size: 48px;
+  color: #445964;
+}
+
+section > div > p{
+  font-size: 18px;
+  color: #263138;
+}
+
+.portifolio-carrossel {
+  overflow: hidden;
+  width: 548px; 
+  margin: 0 auto; 
+  /*heigth carrossel-item = 489px*/
+}
+
+.carrossel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
