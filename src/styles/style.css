@@ -234,7 +234,7 @@ section > div > p{
  .techs > div{
   display: flex;
   flex-direction: row;
-  gap: 28px;
+  gap: 70px;
  }
 
  .techs > div > img{
@@ -261,8 +261,47 @@ section > div > p{
   margin-bottom: 3rem;
  }
 
+ footer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+ }
+
+ .text-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  align-items:end;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-left: 50rem;
+  margin-bottom: 5rem;
+ }
+
+ footer > div > h1{
+  font-size: 72px;
+  color: #445964;
+ }
+
  #first-p-footer{
   font-size: 18px;
   color: #263138;
   font-weight: 600;
+ }
+
+ #message-space{
+  width: 405px;
+  height: 110px;
+  border-radius: 15px;
+  outline: 7px solid #263138;
+  margin: 0 auto;
+}
+
+#message-space > p{
+  width: auto;
+  margin-left: 5px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #445964;
+  background-color: #fbfbfb;
  }
