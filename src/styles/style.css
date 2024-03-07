@@ -169,6 +169,7 @@ section > div > h1{
 section > div > p{
   font-size: 18px;
   color: #263138;
+  font-weight: 600;
 }
 
 .section-portifolio{
@@ -186,7 +187,7 @@ section > div > p{
   overflow: hidden;
   width: 548px;
   height: 489px;
-  position: relative; /* Adicione isso se não estiver presente */
+  position: relative;
   margin: 0 auto;
  }
  
@@ -217,4 +218,51 @@ section > div > p{
   color: #445964;
   cursor: pointer;
  }
+
+ .techs{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 10rem;
+ }
+
+ .techs > h1{
+  font-size: 72px;
+  color: #445964;
+ }
  
+ .techs > div{
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+ }
+
+ .techs > div > img{
+  display: flex;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 2rem;
+ }
+
+ #logo-react{
+  height: 118px;
+ }
+
+ .techs > h3{
+  font-size: 30px;
+  color: #0000007c;
+ }
+
+ .techs > h4{
+  font-size: 26px;
+  color: #263138;
+  margin-top: -20px;
+  margin-bottom: 3rem;
+ }
+
+ #first-p-footer{
+  font-size: 18px;
+  color: #263138;
+  font-weight: 600;
+ }
