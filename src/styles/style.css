@@ -68,7 +68,7 @@ article > p{
   color: #445964;
 }
 
-article > p > span{
+#main-header-span{
   font-weight: 900;
   font-size: 72px;
   line-height: 95px;
@@ -287,25 +287,69 @@ section > div > p{
   color: #445964;
  }
 
- #first-p-footer{
+#first-p-footer{
   font-size: 18px;
   color: #263138;
-  font-weight: 600;
- }
-
- #message-space{
-  width: 405px;
-  height: 110px;
-  border-radius: 15px;
-  outline: 7px solid #263138;
-  margin: 0 auto;
+  font-weight: 500;
 }
 
-#message-space > p{
-  width: auto;
-  margin-left: 5px;
-  font-size: 26px;
-  font-weight: 800;
-  color: #445964;
-  background-color: #fbfbfb;
+ #dialog{
+  display: flex;
+  align-items: center;
+  margin-top: -2rem;
+  gap: 20px;
+  padding: 3rem;
  }
+
+.squad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 530px;
+  height: 260px;
+  border-radius: 20px;
+}
+
+.squad > p{
+  font-size: 32px;
+  font-weight: 500;
+  color: #fbfbfb;
+  margin-left: 1rem;
+}
+
+#p-squad1, #p-squad3{
+  background-color: #263138;
+}
+
+#squad2, #p-squad2{
+  background-color: #445964;
+}
+
+#squad1, #squad3{
+  margin-top: 6.5rem;
+  background-color: #263138;
+}
+
+#final-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#final-message > p{
+  font-size: 24px;
+  color: #263138;
+  font-weight: 500;
+  margin-left: 1.3rem;
+}
+
+.final-message-span{
+  color: #263138;
+}
+
+#final-message > h1{
+  font-size: 42px;
+  color: #263138;
+}
